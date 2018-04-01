@@ -1,0 +1,17 @@
+com.mJunction.bam
+com.mJunction.bam.bamLogin
+com.mJunction.bam.bamLogout
+com.mJunction.bam.bidderSync
+com.mJunction.bam.common
+com.mJunction.bam.common.exception
+com.mJunction.bam.controller
+com.mJunction.bam.controller.FileHandling
+com.mJunction.bam.dashBoard
+com.mJunction.bam.exportToExcel
+com.mJunction.bam.exportToPdf
+com.mJunction.bam.graphPieChart
+com.mJunction.bam.search
+com.mJunction.bam.service
+com.mJunction.bam.serviceImpl
+com.mJunction.bam.utility
+com.mJunction.bam.webService

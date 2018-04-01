@@ -1,0 +1,991 @@
+﻿@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-family: 'open_sansregular';
+	src: url('../fonts/opensans-regular-webfont.eot');
+	src: url('../fonts/opensans-regular-webfont.eot?#iefix')
+		format('embedded-opentype'),
+		url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+		url('../fonts/opensans-regular-webfont.woff') format('woff'),
+		url('../fonts/opensans-regular-webfont.ttf') format('truetype'),
+		url('../fonts/opensans-regular-webfont.svg#open_sansregular')
+		format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'oswaldbook';
+	src: url('../fonts/oswald-regular-webfont.eot');
+	src: url('../fonts/oswald-regular-webfont.eot?#iefix')
+		format('embedded-opentype'),
+		url('../fonts/oswald-regular-webfont.woff2') format('woff2'),
+		url('../fonts/oswald-regular-webfont.woff') format('woff'),
+		url('../fonts/oswald-regular-webfont.ttf') format('truetype'),
+		url('../fonts/oswald-regular-webfont.svg#oswaldbook') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'oswaldlight';
+	src: url('../fonts/oswald-light-webfont.eot');
+	src: url('../fonts/oswald-light-webfont.eot?#iefix')
+		format('embedded-opentype'),
+		url('../fonts/oswald-light-webfont.woff2') format('woff2'),
+		url('../fonts/oswald-light-webfont.woff') format('woff'),
+		url('../fonts/oswald-light-webfont.ttf') format('truetype'),
+		url('../fonts/oswald-light-webfont.svg#oswaldlight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'open_sanslight';
+	src: url('~/fonts/opensans-light-webfont.eot');
+	src: url('../fonts/opensans-light-webfont.eot?#iefix')
+		format('embedded-opentype'),
+		url('../../fonts/opensans-light-webfont.woff2') format('woff2'),
+		url('../fonts/opensans-light-webfont.woff') format('woff'),
+		url('../fonts/opensans-light-webfont.ttf') format('truetype'),
+		url('../fonts/opensans-light-webfont.svg#open_sanslight')
+		format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	margin: 0 auto;
+	font-size: 14px;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.NoPad {
+	padding: 0;
+}
+
+input:-webkit-autofill {
+	background-color: none !important;
+}
+
+.fromL {margin-left10px;
+	
+}
+
+.BordRight {
+	border-right: #fff solid 1px;
+}
+
+.WidthHundred {
+	width: 100%;
+}
+
+.WidthHundred input[type="text"] {
+	width: 100%;
+}
+
+i {
+	font-size: 18px;
+}
+/*-------------------------------login------------------------------------------*/
+.LoginBg {
+	background: url(../img/login-bg.jpg) center no-repeat;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+.LoginHolder {
+	margin: 0 auto;
+	width: 25%;
+	background: #99def9;
+	padding: 10px;
+	/*margin-top: 50px;*/
+	margin-top: 5px;
+	overflow: hidden;
+}
+
+.LoginHolderInner {
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	border: #fff solid 1px;
+	float: left;
+}
+
+.LoginLogoHolder {
+	margin: 11px auto;
+	width: 100%;
+	text-align: center;
+}
+
+.LoginLogoHolder img {
+	margin-top: -10px;
+}
+
+.LoginFields {
+	margin: 30px auto 20px;
+	overflow: hidden;
+	width: 70%;
+}
+
+.LoginFields h1 {
+	font-family: 'open_sanslight';
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.LoginFieldsBlock {
+	border-bottom: #1f84ab solid 1px;
+	overflow: hidden;
+	margin: 30px 0;
+}
+
+.LoginFieldsBlock input[type="text"],.LoginFieldsBlock input[type="password"]
+	{
+	background: none;
+	border-radius: 0px;
+	border: none;
+	padding: 3px 0;
+	color: #1f84ab;
+}
+
+.LoginUser {
+	background: url(../img/user12.png) no-repeat;
+}
+
+.LoginLock {
+	background: url(../img/lock.png) no-repeat;
+}
+
+.LoginFieldsButton {
+	width: 100%;
+	background: #00adef;
+	padding: 5px 0;
+	float: left;
+}
+
+.CancelFieldsButton {
+	background: #0682b1;
+	width: 100%;
+	padding: 5px 0;
+	float: left;
+}
+
+.LoginFieldsButton input[type="submit"] {
+	background: none;
+	border: none;
+	border-radius: none;
+	padding: 5px;
+	color: #fff;
+	width: 100%;
+}
+
+.CancelFieldsButton input[type="button"] {
+	background: none;
+	border: none;
+	border-radius: none;
+	padding: 5px;
+	color: #fff;
+	width: 100%;
+}
+
+.SpaceEd {
+	margin-right: 5px;
+}
+
+.DeptSelect select {
+	width: 145px;
+}
+/*-------------------------------login------------------------------------------*/
+/*-------------------------------Header------------------------------------------*/
+.DosHeader { /*background:url(../img/night.jpg) no-repeat;*/
+	
+}
+
+header {
+	width: 100%;
+	border-bottom: #76c5f0 solid 1px;
+	float: left;
+	/* background: #4a58b4;*/
+	/* padding: 3px 0; */ /*overflow:hidden;*/
+	height: auto;
+}
+
+.LogoHolder {
+	background: #fff;
+	text-align: left;
+	Padding-top: 5px;
+}
+
+.LogoHolder img {
+	width: 65%;
+}
+
+.HeadingHolder {
+	color: #333;
+	font-family: 'open_sansregular';
+	font-size: 18px;
+	margin-top: 28px;
+	padding-left: 10px;
+	text-align: left;
+	text-transform: capitalize;
+	font-weight: bold;
+}
+
+.AccountDetails {
+	color: #333;
+	float: right;
+	margin-top: 21px;
+	width: 100%;
+}
+
+.AcD {
+	float: right;
+}
+
+.HomeIcon {
+	padding-top: 4px;
+}
+
+.AccountDetailsText {
+	text-align: right;
+	font-size: 11px;
+	width: 100%;
+	margin-right: 5px;
+	color: #333;
+}
+
+.AccountDetailsText ul>li>a {
+	color: #fff;
+	font-size: 14px;
+}
+
+.AccountDetailsText ul>li>ul {
+	background: #314d6f;
+}
+
+.UserImage {
+	
+}
+
+.UserImage img {
+	width: 30px;
+	height: 30px;
+	border-radius: 20px;
+}
+
+.Topbreadcrumb {
+	float: left;
+	margin-top: 5px;
+	width: 100%;
+}
+
+.Topbreadcrumb ul li {
+	display: block;
+	float: left;
+	font-size: 13px;
+	margin-right: 5px;
+}
+
+.Topbreadcrumb .active {
+	color: #808080;
+	font-weight: bold;
+}
+
+.ChangeInci {
+	color: #fff;
+	padding-top: 10px;
+}
+
+.ChangeInci select {
+	color: #333;
+	font-family: "open_sansregular";
+	font-size: 13px;
+	font-weight: normal;
+	margin-left: 7px;
+	width: 93px;
+}
+
+.MainHeading {
+	padding-top: 4px;
+}
+/*-------------------------------Header------------------------------------------*/
+.MainContainer {
+	float: left;
+	width: 100%;
+	PADDING-top: 18px;
+	background: url(../img/login-bg.jpg);
+	background-size: cover
+}
+
+.ExportButton {
+	position: absolute;
+	right: 15px;
+}
+
+.ExportBg {
+	background: #f2f3cb none repeat scroll 0 0;
+	border: medium none;
+	color: #066195;
+}
+
+.AdminElementBox .AdminYellow {
+	background: #e6575a none repeat scroll 0 0;
+	color: #fff;
+	height: 105px;
+	padding: 11px 0;
+	text-align: center;
+}
+
+.AdminElementBoxHeading {
+	float: left;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.AdminElementBoxHeading h1 {
+	color: #e2463f;
+	font-family: "open_sanslight";
+	font-size: 24px;
+	margin: 0;
+}
+
+.AdminElementBox .AdminYellow h2 {
+	font-size: 30px;
+	margin: 0;
+}
+
+.AdminElementBox .AdminYellow h3 {
+	font-size: 16px;
+	margin: 5px;
+}
+
+.AdminElementBox .AdminYellow p {
+	font-size: 12px;
+	font-family: "Open Sans";
+}
+
+.AdminYellow a {
+	font-family: 'oswaldbook';
+	color: #fff;
+}
+
+.AdminYellow a:hover {
+	text-decoration: none;
+}
+
+.FTop {
+	margin-top: 12px !important;
+}
+
+.AdminElementBox .AdminRed {
+	background: #787950;
+}
+
+.AdminElementBox .AdminBlue {
+	background: #dd964a;
+}
+
+.AdminElementBox .AdimVio {
+	background: #68648c;
+}
+
+.container {
+	width: 100%;
+}
+
+.tab-content {
+	border: #ccc solid 1px;
+	background: #FFF;
+	float: left;
+	padding: 20px 0;
+	width: 100%;
+}
+
+.NoPadL {
+	padding-left: 0;
+}
+
+.NoPadR {
+	padding-right: 0;
+}
+
+.NoPad {
+	padding: 0;
+}
+
+.PiechartHolder {
+	float: left;
+	width: 100%;
+	border: #ccc solid 1px;
+	padding: 9px 9px 0;
+	height: 210px;
+	background: #f7f7f7;
+}
+
+.PiechartHolder h3 {
+	border-bottom: 1px solid #ccc;
+	font-size: 16px;
+	margin: 0 0 10px;
+	padding-bottom: 5px;
+}
+
+.PiechartHolder img {
+	width: 78%;
+}
+
+.lower {
+	margin-top: 20px;
+	float: left;
+	width: 100%;
+}
+
+.lower .PiechartHolder {
+	height: auto;
+}
+
+.dropdown-menu {
+	right: 0;
+	left: none;
+	padding: 8px;
+}
+
+.DtTable {
+	border: 1px solid #ccc;
+	height: 564px;
+	overflow: auto;
+	padding: 5px;
+}
+
+.DtTable thead tr {
+	background: #2c6cbb;
+	color: #fff;
+}
+
+.DtTable th {
+	padding: 8px;
+	border-right: #fff solid 3px;
+}
+
+.DtTable th:last-child {
+	border-right: none;
+}
+
+.DtTable td {
+	padding: 8px;
+	border-right: #fff solid 3px;
+}
+
+.DtTable td:last-child {
+	border-right: none;
+}
+
+.DtTable tbody tr:nth-child(n) {
+	background: #e7e7e7;
+}
+
+.DtTable tbody tr:nth-child(2n) {
+	background: #f8f6f6;
+}
+
+.green {
+	color: #0ca600;
+}
+
+.red {
+	color: #e84c3d;
+}
+
+.blue {
+	color: #0c52a0;
+}
+
+.datepicker {
+	width: 212px;
+}
+
+.PiechartHolder select {
+	width: 200px;
+}
+
+footer {
+	background: #333;
+	color: #fff;
+	padding: 5px 0;
+	font-size: 11px;
+	text-align: center;
+	/* margin-top: 40px; */
+	float: left;
+	width: 100%;
+	/* position: fixed; */
+	bottom: 0;
+}
+
+.margTp35 {
+	margin-top: 35px;
+}
+
+.blueBtn {
+	background-color: #00adef;
+	color: #ffffff !important;
+	padding: 5px 20px;
+}
+
+.blueBtn1 {
+	background-color: #0682b1;
+	color: #ffffff !important;
+	padding: 5px 20px;
+}
+
+.srcResultContainer {
+	right: 100px;
+	background: #f4f5dc;
+	padding: 3px;
+	font-size: 12px;
+	color: #066195 !important;
+}
+
+.margTp5 {
+	margin-top: 5px;
+}
+
+.closeTxt {
+	color: #066195 !important;
+}
+
+.cursorHand {
+	cursor: pointer !important;
+}
+
+.modal-header {
+	padding: 10px;
+	border-bottom: 1px solid #e5e5e5;
+	background: #ffffff !important;
+}
+
+.textArea78 {
+	width: 78% !important;
+}
+
+.textArea85 {
+	width: 100% !important;
+	height: 250px !important;
+}
+
+.margBot20px {
+	margin-bottom: 20px !important;
+}
+
+/*---------------------------------------responsive css--------------------------------------*/
+@media ( max-width :1100px) {
+	.navbar-nav>li>a {
+		font-size: 12px;
+	}
+	header {
+		height: 56px;
+	}
+	.RedAlert {
+		overflow: hidden;
+	}
+}
+
+@media ( max-width :1000px) {
+	.HomeIcon {
+		float: left;
+		width: 16%;
+	}
+	.AccountDetails .col-sm-9 {
+		float: right;
+		width: 68%;
+	}
+	.AccountDetails .col-sm-8 {
+		float: left;
+		padding: 0;
+	}
+	.AccountDetails .col-sm-4 {
+		float: right;
+		width: 10%;
+	}
+	.HeadingHolder {
+		font-size: 14px;
+	}
+	.LogoHolder {
+		float: left;
+		text-align: left;
+		width: 20%;
+	}
+	.LogoHolder img {
+		width: 100%;
+	}
+	.AccountDetails {
+		color: #fff;
+		float: right;
+		margin-top: 2px;
+		/*overflow: hidden;*/
+		width: 100%;
+	}
+	.MainHeading {
+		margin: 5px 0;
+		width: 35%;
+		float: left;
+	}
+	.AccHoldr {
+		width: 45%;
+		float: right;
+	}
+	.navbar-nav>li>a {
+		font-size: 12px;
+	}
+}
+
+@media ( max-width :1200px) and (min-width:1000px) {
+	.LoginHolder {
+		width: 35%;
+	}
+	.TimeUpdate .col-sm-1 {
+		width: 10%;
+	}
+	.TimeUpdate .col-sm-10 {
+		width: 80%;
+	}
+	.custom-file-upload input[type="Text"] {
+		width: 70%;
+	}
+	support member the class before the button will be col-sm-12 not 6 table
+		{
+		width: 100%;
+	}
+	.LoginFields h1 {
+		font-size: 15px;
+	}
+}
+
+@media ( max-width :900px) {
+	header {
+		height: 56px;
+	}
+	.RedAlert {
+		overflow: hidden;
+	}
+}
+
+@media ( max-width :900px) and (min-width:700px) {
+	.LoginHolder {
+		width: 40%;
+	}
+	.LoginFields {
+		margin: 50px auto;
+		overflow: hidden;
+		width: 74%;
+	}
+	.LoginBg {
+		overflow: hidden;
+		position: relative;
+		min-height: 583px;
+	}
+	.LoginHolder {
+		overflow: hidden;
+	}
+	.LoginFields h1 {
+		font-size: 14px;
+	}
+	.TimeUpdate .col-sm-1 {
+		width: 14%;
+	}
+	.AdminElementBox .AdminYellow h2 {
+		font-size: 21px;
+	}
+	.AdminLeftPanelRedHeading .col-sm-4 {
+		width: 100%;
+	}
+	.AdminLeftPanelRedHeading .col-sm-8 {
+		width: 100%;
+	}
+	.AdminLeftPanelMenu {
+		padding: 0px;
+	}
+	.AccountDetailsText ul>li>a {
+		font-size: 13px;
+	}
+	footer {
+		position: relative;
+	}
+	.DamandRow label {
+		font-size: 11px;
+	}
+	.AdminElementBoxHeading .col-sm-8 {
+		width: 48%;
+	}
+	.AdminElementBoxHeading .col-sm-4 {
+		width: 52%;
+	}
+	.MidAdminBox {
+		padding: 9px;
+		width: 100%;
+	}
+	.DashBoardHolder .col-sm-2 {
+		width: 20%;
+	}
+	.DashBoardHolder .col-sm-10 {
+		width: 78%;
+	}
+	.TimeUpdate .col-sm-10 {
+		width: 72%;
+	}
+	.AdminElementBox .col-sm-3 {
+		padding-right: 1px;
+		padding-left: 1px;
+	}
+	.custom-file-upload input[type="Text"] {
+		width: 69%;
+	}
+	.SearchPDA label {
+		font-size: 10px;
+	}
+	.Interaction {
+		font-size: 11px;
+	}
+	.AdminElementBox .AdminYellow p {
+		font-size: 13px;
+	}
+	.TimeTable td {
+		font-size: 18px;
+		height: 43px;
+	}
+	.SearchPDA select,Input[type="text"] {
+		font-size: 13px;
+	}
+	.UpdateTextArea {
+		height: 60px;
+	}
+	.RefershButton {
+		height: 60px;
+	}
+	.TimeUpdate .col-sm-10 {
+		width: 70%;
+	}
+	.TimeUpdate .col-sm-1 {
+		width: 15%;
+	}
+	.RefershButton .col-sm-1 {
+		width: 9%;
+	}
+	.AdminElementBox .AdminYellow p {
+		font-size: 12px;
+	}
+	.AdminElementBoxHeading h1 {
+		font-size: 16px;
+	}
+	.custom-file-upload input[type="Text"] {
+		width: 60%;
+	}
+}
+
+@media ( max-width :680px) {
+	.LoginHolder {
+		width: 50%;
+	}
+	.LoginBg {
+		height: auto;
+	}
+	header {
+		overflow: hidden;
+	}
+	.HomeIcon {
+		float: left;
+		width: 16%;
+	}
+	.AccountDetails .col-sm-9 {
+		float: right;
+		width: 68%;
+	}
+	.AccountDetails .col-sm-8 {
+		float: left;
+		padding: 0;
+	}
+	.AccountDetails .col-sm-4 {
+		float: right;
+		width: 10%;
+	}
+	.HeadingHolder {
+		font-size: 14px;
+	}
+	.LogoHolder {
+		float: left;
+		text-align: left;
+		width: 20%;
+	}
+	.LogoHolder img {
+		width: 100%;
+	}
+	.AccountDetails {
+		color: #fff;
+		float: right;
+		margin-top: 2px;
+		/*overflow: hidden;*/
+		width: 100%;
+	}
+	.MainHeading {
+		margin: 5px 0;
+		width: 35%;
+		float: left;
+	}
+	.AccHoldr {
+		width: 45%;
+		float: right;
+	}
+	.Allert {
+		float: left;
+		width: 72%;
+	}
+	.CrisisIncident {
+		width: 20%;
+	}
+	.AlertText {
+		float: left;
+		width: 80%;
+	}
+	.AlertText label {
+		font-size: 13px;
+	}
+	.SelectIncident {
+		float: right;
+		width: 28%;
+	}
+	.SelectIncident select {
+		width: 90;
+		margin-right: 8px;
+	}
+	.SelectIncident .btn {
+		border-radius: 0;
+	}
+	.navbar {
+		min-height: 50px;
+		max-height: 100px;
+	}
+	.navbar-nav>li>a {
+		font-size: 14px;
+	}
+	.navbar-collapse ul {
+		background: #333;
+	}
+	.navbar-inverse .navbar-nav>li>a {
+		color: #fff;
+	}
+	.navbar-inverse .navbar-nav>li>a:focus,.navbar-inverse .navbar-nav>li>a:hover
+		{
+		color: #cccbcb;
+	}
+	.SearchPDA {
+		margin: 5px 0;
+	}
+	.SearchPDA label {
+		width: 100%;
+	}
+	.SearchButton {
+		margin-top: 10px;
+		width: 100%;
+	}
+	header {
+		height: auto;
+	}
+	#showmenu {
+		display: block;
+		color: #fff;
+		margin: 10px;
+		float: left;
+	}
+	footer {
+		position: relative;
+		margin-top: 10px;
+	}
+	.PresidentsVoice {
+		height: auto;
+	}
+	.AdminRightPanel {
+		padding: 0;
+	}
+	#MobileSearch {
+		display: none;
+	}
+	.EnquarySearchMobile {
+		display: block;
+	}
+}
+
+@media ( max-width :480px) {
+	.LoginHolder {
+		width: 70%;
+	}
+	.LoginBg {
+		height: auto;
+	}
+	.LogoHolder {
+		width: 100%;
+	}
+	.MainHeading {
+		width: 100%;
+	}
+	.AccHoldr {
+		width: 100%;
+	}
+	.HomeIcon {
+		float: left;
+		width: 16%;
+	}
+	.AccountDetails .col-sm-9 {
+		float: right;
+		width: 68%;
+	}
+	.AccountDetails .col-sm-8 {
+		float: left;
+		padding: 0;
+	}
+	.AccountDetails .col-sm-4 {
+		float: right;
+		width: 10%;
+	}
+	.LogoHolder {
+		text-align: center;
+	}
+	.LogoHolder img {
+		width: 42%;
+	}
+	.HeadingHolder {
+		font-size: 16px;
+	}
+	.AlertText {
+		float: right;
+		width: 68%;
+	}
+	.Allert {
+		float: left;
+		width: 100%;
+	}
+	.CrisisIncident {
+		width: 32%;
+	}
+	.SelectIncident {
+		width: 100%;
+	}
+	.SelectIncident select {
+		width: 100%;
+		margin-right: 0px;
+	}
+	.PDAModalWidth {
+		width: 94%;
+	}
+}
+
+@media ( max-width :380px) {
+	.LoginHolder {
+		width: 90%;
+	}
+}
